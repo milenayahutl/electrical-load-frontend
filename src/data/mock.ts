@@ -1,0 +1,55 @@
+
+import type { ElectricityConsumer } from '../types/ElectricityConsumer'
+
+export const ELECTRICITY_CONSUMERS_MOCK: ElectricityConsumer[] = [
+  {
+    id: 1,
+    name: 'Электрический чайник',
+    description: 'Бытовой прибор для быстрого нагрева воды.',
+    powerKW: 2.0,
+    currentA: 9.1,
+    image: '',
+    video: '',
+    likes: 12,
+  },
+  {
+    id: 2,
+    name: 'Холодильник',
+    description: 'Прибор для охлаждения и хранения продуктов.',
+    powerKW: 0.15,
+    currentA: 0.7,
+    image: '',
+    video: '',
+    likes: 8,
+  },
+  {
+    id: 3,
+    name: 'Микроволновая печь',
+    description: 'Прибор для разогрева и приготовления пищи.',
+    powerKW: 1.2,
+    currentA: 5.5,
+    image: '',
+    video: '',
+    likes: 15,
+  },
+  {
+    id: 4,
+    name: 'Стиральная машина',
+    description: 'Бытовой прибор для автоматической стирки белья.',
+    powerKW: 2.2,
+    currentA: 10.0,
+    image: '',
+    video: '',
+    likes: 6,
+  },
+  {
+    id: 5,
+    name: 'Настольная лампа',
+    description: 'Осветительный прибор для рабочего стола.',
+    powerKW: 0.01,
+    currentA: 0.05,
+    image: '',
+    video: '',
+    likes: 4,
+  },
+]
