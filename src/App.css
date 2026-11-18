@@ -1084,3 +1084,64 @@ select {
 .app-wrapper {
   background: #1e1e1e;
 }
+
+.bottom-nav .nav-logout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+
+  border: none;
+  padding: 0;
+  background: transparent;
+
+  color: #383d44;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.bottom-nav .nav-logout:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.feed-like {
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.feed-like:disabled {
+  cursor: default;
+}
+
+.feed-heart {
+  color: #00b8a9;
+}
+
+
+/* Блокировка интерфейса во время AJAX-запросов */
+
+.phone-shell {
+  position: relative;
+}
+
+.request-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 100;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  font-size: 16px;
+
+  cursor: wait;
+  pointer-events: auto;
+}
